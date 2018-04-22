@@ -108,7 +108,9 @@ var main = function() {
       .removeClass('back').removeClass('front').addClass('old');
     } else {
       $('.front').removeClass('front').addClass('old').timer('remove');
+      var timearray = $(this).val().split(':');
       $(this).addClass('front').removeClass('back').timer({
+        seconds: timearray[0] * 60 + timearray[1],
         format: '%m:%S',
       });
       $(this).parents('p').children('span')
