@@ -10,7 +10,7 @@ html, body {
 }
 
 .back {
-  color: #aaaaff;
+  color: #9999ff;
 }
 
 .front {
@@ -22,6 +22,10 @@ html, body {
   font-size: 1.0em;
   margin-left: -0.2em;
   margin-right: 0.4em;
+}
+
+.timer:hover {
+  background-color: #f0e0ff;
 }
 
 .timer.timeup {
