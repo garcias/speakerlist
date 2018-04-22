@@ -1,0 +1,151 @@
+html, body {
+  background-color: #aaaadd;
+  font-family: 'Arvo', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.old {
+  color: #cccccc;
+}
+
+.back {
+  color: #aaaaff;
+}
+
+.front {
+  color: #5533ee !important;
+}
+
+.timer {
+  width: 3.5em;
+  font-size: 1.0em;
+  margin-left: -0.2em;
+  margin-right: 0.4em;
+}
+
+.timer.timeup {
+  background-color: #ffccee;
+}
+
+.header {
+  background: rgba(234,234,250,0.90);
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  position: fixed;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.footer {
+  background: rgba(234,234,250,0.90);
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  position: fixed;
+  padding-left: 0px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+h1 {
+  color: #5533ee;
+  font-weight: 400;
+  margin: 0 auto 5px;
+  padding: 20px;
+  text-align: left;
+  max-width: 640px;
+}
+
+.main {
+  padding: 100px 10px 5em;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.list p {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  color: #473e39; 
+  font-size: 2.0em;
+  margin: 0 auto 5px;
+  padding: 10px;
+  padding-left: 20px;
+  max-width: 640px;
+}
+
+.list p .glyphicon-star {
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+}
+
+.list p .glyphicon-star:hover, .list p .active {
+  color: #ffcc00;
+}
+
+.list p .glyphicon-remove {
+  cursor: pointer;
+  float: right;
+}
+
+.list p .glyphicon-remove:hover {
+  color: #ed1c24;
+}
+
+form.form {
+  color: #473e39; 
+  height: 60px;
+  margin: 0 auto 5px;
+  padding: 0;
+  width: 100%;
+  max-width: 640px;
+  padding-left: 20px;
+}
+
+.form-container {
+  max-width: 640px;
+}
+
+.form input {
+  background: rgba(228,228,228,.95);
+  border: none;
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  color: #473e39;
+  float: left;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+  height: 60px;
+  margin: 0 5px 0 0;
+  padding: 0 20px;
+  width: 80%;
+}
+
+.form input:focus {
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  outline: none;
+}
+
+.form button.btn {
+  background: rgba(0,84,166,0.95);
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  color: #fff;
+  float: left;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+  height: 60px;
+  width: 60px;
+}
+
+.form button:hover {
+  background: rgba(0,129,255,0.95);
+  cursor: pointer;
+}
+
+.glyphicon {
+  margin: 10px;
+}
+
+.red {
+  color: red;
+}
