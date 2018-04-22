@@ -54,11 +54,6 @@ var loadList = function() {
       $input.addClass('front').timer({
         seconds: timearray[0] * 60 + timearray[1],
         format: '%m:%S',
-        duration: '120s',
-        callback: function() {
-          $('.front').addClass('timeup').timer('resume');
-        },
-        repeat: true
       });
       $new_item.children('span').removeClass('back').addClass('front');
     }
@@ -115,11 +110,6 @@ var main = function() {
       $('.front').removeClass('front').addClass('old').timer('remove');
       $(this).addClass('front').removeClass('back').timer({
         format: '%m:%S',
-        duration: '120s',
-        callback: function() {
-          $('.front').addClass('timeup').timer('resume');
-        },
-        repeat: true
       });
       $(this).parents('p').children('span')
       .removeClass('back').addClass('front');
