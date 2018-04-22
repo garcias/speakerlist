@@ -34,8 +34,13 @@ var dumpList = function() {
 
 var loadList = function() {
   
+  var previousList = localStorage.getItem('SpeakerList');
+  if (previousList === null) {
+    return;
+  }
+
   $('div.list').empty();
-  var items = JSON.parse(localStorage.getItem('SpeakerList'));
+  var items = JSON.parse(previousList);
   // console.log(items);
   items.forEach( function(item) {
     var $new_item = $(template(item.name));
